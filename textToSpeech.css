@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(45deg, #010758, #490d61);
+  }
+  .container h1 {
+    color: #fff;
+    margin-bottom: 50px;
+    padding:10px;
+    background: transparent;
+    box-shadow: 0 0 5px #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .container h1 span {
+    color: #ff0;
+    font-weight: 700;
+  }
+  textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #403484;
+    color: #fff;
+    margin-bottom: 30px;
+    resize: none;
+    font-size: 15px;
+  }
+  textarea::placeholder {
+    color: #fff;
+    opacity: 0.5;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+  button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background: transparent;
+    box-shadow: 0 0 5px #fff;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  button img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+  button:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.3s ease-in-out;
+    box-shadow: none;
+  }
+  
+  select {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background: transparent;
+    box-shadow: 0 0 5px #fff;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    background: #403484;
+    appearance: none;
+    background-image: url("./Images/2985150.png");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+  }
+  select:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.3s ease-in-out;
+    box-shadow: none;
+  }
+  select option {
+    background: #403484;
+    color: #fff;
+  }
+  select option:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  @media (max-width: 600px) {
+    .container h1 {
+      font-size: 24px;
+    }
+    textarea {
+      width: 90%;
+      height: 200px;
+    }
+    .row {
+      flex-direction: column;
+      gap: 10px;
+      width: 90%;
+    }
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+    select {
+      font-size: 14px;
+      padding: 10px;
+    }
+
+  }
